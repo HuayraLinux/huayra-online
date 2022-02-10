@@ -2,6 +2,38 @@
 <html>
 <head>
 	<script type="text/javascript" src="lib/winbox-0.2.1/dist/winbox.bundle.js"></script>
+	<script type="text/javascript">
+		//Esta funcion la encontre en stackoverflow la uso para recordar las variables importantes
+	function sizes() {
+		let contentWidth = [...document.body.children].reduce( 
+		(a, el) => Math.max(a, el.getBoundingClientRect().right), 0) 
+		- document.body.getBoundingClientRect().x;
+		return {
+			windowWidth:  document.documentElement.clientWidth,
+			windowHeight: document.documentElement.clientHeight,
+			pageWidth:    Math.min(document.body.scrollWidth, contentWidth),
+			pageHeight:   document.body.scrollHeight,
+			screenWidth:  window.screen.width,
+			screenHeight: window.screen.height,
+			pageX:        document.body.getBoundingClientRect().x,
+			pageY:        document.body.getBoundingClientRect().y,
+			screenX:     -window.screenX,
+			screenY:     -window.screenY - (window.outerHeight-window.innerHeight),
+		}
+	}
+	function SetPantalla() {
+		
+		document.getElementById('pantalla').setAttribute("style","display:block;cursor:pointer;border-style:solid;border-color:red");
+		document.getElementById('pantalla').style.width=document.documentElement.clientWidth;
+		//document.getElementById('pantalla').style.width="800px"; //TEST
+		//No se por que no funciona con la altura
+		document.getElementById('pantalla').style.height=document.documentElement.clientHeight;
+		//document.getElementById('pantalla').style.height="500px"; //TEST
+	}
+	function show() {
+	  console.log(sizes());
+	}
+	</script>
 <style>
 
 @font-face {
@@ -97,7 +129,7 @@ color: #333;
     <div class="dropdown-content">
       <!--<span class="no-seleccionable">Accesibilidad</span> -->
 
-      <a href="#" onclick="new WinBox('WinBox.js',{url: 'https://ci.huayra.educar.gob.ar/apps/arduino', root: testdiv});">Arduino Blockly</a>
+      <a href="#" onclick="new WinBox('WinBox.js',{url: 'https://ci.huayra.educar.gob.ar/apps/arduino', root: pantalla});">Arduino Blockly</a>
       <a href="https://ci.huayra.educar.gob.ar/apps/gobstones">Gobstones</a>
       <a href="https://ci.huayra.educar.gob.ar/apps/geogebra/Clasico.html">GeoGebra Cl&aacute;sico</a>
       <a href="https://ci.huayra.educar.gob.ar/apps/geogebra/Calculadora%203d.html">GeoGebra Calculadora</a>
@@ -110,8 +142,12 @@ color: #333;
   <li><a href="#">Sistema</a></li>
 </ul>
 
-<div id="testdiv" style="height: 400px">
-bla
+<div class="box">
+  <button onclick="SetPantalla()" style="">Setear Pantalla</button>
+</div>
+
+<div id="pantalla">
+Esta es la pantalla donde deberia verse las apps
 </div>
 </body>
 </html>
