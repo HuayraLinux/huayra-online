@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'asapregular';
+    src: url('asap-variablefont_wght-webfont.woff2') format('woff2'),
+         url('asap-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body { background-image: url("img/wallpaper_CI.png");
+       background-repeat: no-repeat;
+       background-size: cover; 
+       background-position: top center;
+       width: 100%;
+       height: 100%;
+}
+
+/* La barra de Huayra arriba de todo */
+#top_menu {
+	top: 0;
+	position: absolute;
+	width: 100%;
+	z-index: 10;
+	box-shadow: 0  10px  5px 2px #10101020;
+}
+
+/* Cada submenu flotante */
+#submenu {
+	box-shadow: 5px 10px 5px 5px #10101020;
+	z-index: 30;
+}
+
+/* Lugar donde aparecen las apps*/
+#pantalla {
+	z-index:0;
+	position: fixed;
+	/*height:100%;
+	width:95%;*/
+	
+}
+
+ul {
+  list-style-type: none;
+  margin: -8px;
+  padding: 13px 6px 2px 6px;
+  width: 100%;
+  background-color: #d6dcdc;
+ 
+}
+
+li {
+  display: inline;
+  vertical-align: top;
+}
+li a {
+  color: #555;
+  text-decoration: none;
+  padding: 8px 10px;
+  width: 300px;
+  font-family:'asapregular';
+  font-weight:normal;
+  font-style:normal;
+  
+  
+}
+
+li a:hover:not(.active) {
+  background-color: #4B92FF;
+  color: white;
+}
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #d6dcdc;
+  min-width: 160px;
+  z-index: 1;
+  margin-top: 8px;
+  font-family:'asapregular';
+  font-weight:normal;
+  font-style:normal;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.no-seleccionable { padding: 12px 16px;
+  width: 300px;
+display: block;
+color: #333;
+}
