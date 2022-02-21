@@ -4,6 +4,7 @@
 	<link rel="stylesheet" href="escritorio.css" type="text/css"/>
 
 	<script type="text/javascript" src="lib/winbox-0.2.1/dist/winbox.bundle.js"></script>
+	<script type="text/javascript" src="escritorio.js" defer></script>
 	<script type="text/javascript">
 		//Esta funcion la encontre en stackoverflow la uso para recordar las variables importantes
 	function sizes() {
@@ -38,12 +39,12 @@
 	</script>
 
 </head>
-<body style="height:500px" onLoad="SetPantalla()">  <!-- ES IMPORTANTE SETEAR UNA ALTURA AL MENOS, PARA QUE WINBOX PUEDA CREAR LA VENTANA 
+<body style="height:800px" onLoad="SetPantalla()">  <!-- ES IMPORTANTE SETEAR UNA ALTURA AL MENOS, PARA QUE WINBOX PUEDA CREAR LA VENTANA 
 	NO FUNCIONA SI SE PONE height=100%. LA VENTANA no respeta limites del div PANTALLA. ESTA MAL ESTO	-->
 
 
 <div id="pantalla" >
-Esta es la pantalla donde deberia verse las apps
+
 </div>
 <div id="top_menu">
 <ul>
@@ -51,16 +52,18 @@ Esta es la pantalla donde deberia verse las apps
   <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Aplicaciones</a>
     <div id="submenu" class="dropdown-content">
-      <!--<span class="no-seleccionable">Accesibilidad</span> -->
-
-      <a href="#" onclick="new WinBox('WinBox.js',{url: 'https://ci.huayra.educar.gob.ar/apps/arduino', root: document.pantalla, top:50,right:50,bottom:0,left:50});">Arduino Blockly</a>
-      <a href="https://ci.huayra.educar.gob.ar/apps/gobstones">Gobstones</a>
-      <a href="https://ci.huayra.educar.gob.ar/apps/geogebra/Clasico.html">GeoGebra Cl&aacute;sico</a>
-      <a href="https://ci.huayra.educar.gob.ar/apps/geogebra/Calculadora%203d.html">GeoGebra Calculadora</a>
-      <a href="https://ci.huayra.educar.gob.ar/apps/geogebra/Geometria.html">GeoGebra Geometr&iacute;a</a>
-      <a href="https://ci.huayra.educar.gob.ar/apps/simulaciones/">Simulaciones Interactivas</a>
- 
-   </div>
+		
+		<ul>
+		  <!--<span class="no-seleccionable">Accesibilidad</span> -->
+		  <li id="arduino"><a href="#">Arduino Blockly</a></li>
+		  <li id="gobstones"><a href="#">Gobstones</a></li>
+		  <li id="geogebra"><a href="#">GeoGebra Cl&aacute;sico</a></li>
+		  <li id="geocalc"><a href="#">GeoGebra Calculadora</a></li>
+		  <li id="geometria"><a href="#">GeoGebra Geometr&iacute;a</a></li>
+		  <li id="simulaciones"><a href="#">Simulaciones Interactivas</a></li>
+		 </ul>
+		
+	</div>
   </li>
   <li><a href="#">Lugares</a></li>
   <li><a href="#">Sistema</a></li>

@@ -48,6 +48,24 @@ ul {
  
 }
 
+nav ul {
+  list-style-type: none;
+  margin: -8px;
+  padding: 13px 6px 2px 6px;
+  width: 100%;
+  background-color: #d6dcdc;
+ 
+}
+
+nav li {
+	cursor: pointer;
+	background-color:#d6dcdc;
+	padding: 13px 6px 2px 6px;
+	width: 100%;
+	display: inline;
+	vertical-align: top;
+}
+
 li {
   display: inline;
   vertical-align: top;
@@ -102,4 +120,8 @@ li.dropdown {
   width: 300px;
 display: block;
 color: #333;
+}
+
+.WinBox {
+	background: #fefefe;
 }
