@@ -137,6 +137,7 @@ color: #333;
 	top: 100px;
 	left: 20px;
 }
+#home:hover { background-image:url(iconos/home_hover.png); }
 
 #grooming {
 	background-image:url(iconos/grooming.png);
@@ -144,6 +145,7 @@ color: #333;
 	top: 200px;
 	left: 20px;
 }
+#grooming:hover { background-image:url(iconos/grooming_hover.png); }
 
 #grooming_page {
 	background-color:#37a45c ;
