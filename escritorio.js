@@ -122,10 +122,10 @@ grooming.addEventListener('click', () => {
 	const groomingBox = new WinBox(
 	{
 		title:"Hablemos de Grooming",
-		width:'600px',
-		height:'500px',
+		background: '#bbb',
+		width:'558px',
+		height:'345px',
 		top:35,
-		left:0,
 		mount:groomingText,
 	})
 })
