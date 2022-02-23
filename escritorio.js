@@ -124,7 +124,7 @@ grooming.addEventListener('click', () => {
 		title:"Hablemos de Grooming",
 		width:'600px',
 		height:'500px',
-		top:40,
+		top:35,
 		left:0,
 		mount:groomingText,
 	})

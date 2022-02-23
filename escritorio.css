@@ -145,6 +145,12 @@ color: #333;
 	left: 20px;
 }
 
+#grooming_page {
+	background-color:#37a45c ;
+	width:100%;
+	height:100%;
+}
+
 .hidden {
 	display: none;
 }
