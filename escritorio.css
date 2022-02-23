@@ -121,4 +121,30 @@ color: #333;
   color: #1b1b1b;
 }
 
+.icono {
+	/*border-style:solid;
+	border-color:red;*/
+	width: 64px;
+	height: 64px;
+	position: absolute;
+	cursor: pointer;
+	
+}
 
+#home {
+	background-image:url(iconos/home.png);
+	background-size:64px;
+	top: 100px;
+	left: 20px;
+}
+
+#grooming {
+	background-image:url(iconos/grooming.png);
+	background-size:64px;
+	top: 200px;
+	left: 20px;
+}
+
+.hidden {
+	display: none;
+}

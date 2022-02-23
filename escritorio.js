@@ -4,6 +4,9 @@ const geometria=document.querySelector('#geometria')
 const geogebra=document.querySelector('#geogebra')
 const geocalc=document.querySelector('#geocalc')
 const simulaciones=document.querySelector('#simulaciones')
+const grooming=document.querySelector('#grooming')
+const home=document.querySelector('#home')
+const groomingText=document.querySelector('#grooming_page')
 
 arduino.addEventListener('click', () => {
 	const arduinoBox = new WinBox(
@@ -113,3 +116,18 @@ simulaciones.addEventListener('click', () => {
 		bottom:0,
 		left:0})
 	})
+
+
+grooming.addEventListener('click', () => {
+	const groomingBox = new WinBox(
+	{
+		title:"Hablemos de Grooming",
+		width:'600px',
+		height:'500px',
+		top:40,
+		left:0,
+		mount:groomingText,
+	})
+})
+
+	
