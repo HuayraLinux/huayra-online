@@ -1,0 +1,14 @@
+.app-icon {
+  width: 150px;
+  height: 150px;
+  padding: 20px !important;
+  border: 15px solid white !important;
+  border-radius: 50%;
+  box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.75);
+}
+
+.tape {
+  z-index: 2;
+  transform: rotate(5deg);
+  box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.75);
+}

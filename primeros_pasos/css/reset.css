@@ -1,0 +1,33 @@
+html, body {
+  -webkit-user-select: none;
+  user-select: none;
+  margin: 0;
+  overflow: hidden;
+  text-shadow: none;
+  box-sizing: border-box;
+}
+
+button {
+  background: none;
+	color: inherit;
+	font: inherit;
+	outline: inherit;
+}
+
+img {
+  display: block;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4 {
+  margin: 0;
+  letter-spacing: normal;
+  text-shadow: none;
+}
+
+.reveal a,
+.reveal p {
+  text-shadow: none;
+}

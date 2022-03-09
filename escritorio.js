@@ -125,9 +125,21 @@ grooming.addEventListener('click', () => {
 		background: '#bbb',
 		width:'558px',
 		height:'345px',
-		top:35,
-		mount:groomingText,
+		url: 'https://www.argentina.gob.ar/grooming',
+		top:35//,
+		//mount:groomingText,
 	})
 })
 
-	
+home.addEventListener('click', () => {
+	const homeBox = new WinBox(
+	{
+		title:"Primeros Pasos",
+		background: '#bbb',
+		width:'558px',
+		height:'345px',
+		url: 'primeros_pasos/ppasos.html',
+		top:35//,
+		//mount:groomingText,
+	})
+})

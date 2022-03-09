@@ -1,0 +1,207 @@
+.text-white {
+  color: #fff !important;
+}
+
+.bg-color-white {
+  background-color: #fff;
+}
+
+.bg-orange-500 {
+  background-color: rgb(255, 196, 89);
+}
+
+.bg-orange-600 {
+  background-color: rgb(230, 151, 50);
+}
+
+.bg-turquoise-500 {
+  background-color: #2DB0B2;
+}
+
+.bg-green-700 {
+  background-color: rgb(23, 148, 83);
+}
+
+.bg-purple-500 {
+  background-color: rgb(130, 44, 134);
+}
+
+.bg-alizarin-500 {
+  background-color: #EB6D7F;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.flex-column {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.justify-center {
+  justify-content: center !important;
+}
+
+.justify-space-around {
+  justify-content: space-around !important;
+}
+
+.justify-space-between {
+  justify-content: space-between !important;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-end {
+  align-items: flex-end !important;
+}
+
+.opacity-07 {
+  opacity: 0.7;
+}
+
+.opacity-085 {
+  opacity: 0.85;
+}
+
+.opacity-09 {
+  opacity: 0.9;
+}
+
+.rounded {
+  border-radius: 5px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.bold {
+  text-shadow: none !important;
+  font-weight: 600 !important;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-half {
+  width: 50%;
+}
+
+.margin-auto {
+  margin: auto !important;
+}
+
+.reveal .margin-top-1 {
+  margin-top: 1rem;
+}
+
+.margin-top-2 {
+  margin-top: 2rem !important;
+}
+
+.margin-top-4 {
+  margin-top: 4rem !important;
+}
+
+.margin-top-5 {
+  margin-top: 5rem !important;
+}
+
+.margin-left-2 {
+  margin-left: 2rem !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+.z-index-100 {
+  z-index: 100;
+}
+
+.border-full {
+  border-radius: 50%;
+}
+
+.border-02 {
+  border: 0.2rem solid white !important;
+}
+
+.border-white {
+  border-color: white;
+}
+
+.shadow {
+  box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.75);
+}
+
+.padding-2 {
+  padding: 2rem !important;
+}
+
+.padding-3 {
+  padding: 3rem !important;
+}
+
+.padding-x-3 {
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+}
+
+.padding-y-1 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.inline-block {
+  display: inline-block !important;
+}
+
+.text-shadow-none {
+  text-shadow: none !important;
+}
+
+.list-style-none {
+  list-style-type: none;
+}
+
+.font-size-3 {
+  font-size: 3rem !important;
+}
+
+.font-size-2-5 {
+  font-size: 2.5rem !important;
+}
+
+.font-size-2 {
+  font-size: 2rem !important;
+}
+
+.font-size-1-5 {
+  font-size: 1.5rem !important;
+}
+
+.font-size-1 {
+  font-size: 1rem !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.cursor-pointer {
+	cursor: pointer;
+}
