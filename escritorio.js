@@ -7,6 +7,7 @@ const simulaciones=document.querySelector('#simulaciones')
 const grooming=document.querySelector('#grooming')
 const home=document.querySelector('#home')
 const groomingText=document.querySelector('#grooming_page')
+const ppasosText=document.querySelector('#primeros_pasos')
 
 arduino.addEventListener('click', () => {
 	const arduinoBox = new WinBox(
@@ -132,6 +133,19 @@ grooming.addEventListener('click', () => {
 })
 
 home.addEventListener('click', () => {
+	const homeBox = new WinBox(
+	{
+		title:"Primeros Pasos",
+		background: '#bbb',
+		width:'558px',
+		height:'345px',
+		url: 'primeros_pasos/ppasos.html',
+		top:35//,
+		//mount:groomingText,
+	})
+})
+
+primeros_pasos.addEventListener('click', () => {
 	const homeBox = new WinBox(
 	{
 		title:"Primeros Pasos",

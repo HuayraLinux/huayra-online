@@ -18,13 +18,15 @@
   <body class="flex-column">
     <main id="main">
       <div class="reveal bg-color-white">
-        <div id="slides-list" class="slides">
-          <section data-autoslide="5000">
+        <div>
+        <!-- <div id="slides-list" class="slides"> -->
+           <section >
             <h1>¡Te damos la bienvenida a Huayra 5!</h1>
             <img src="assets/logos/vaca_liso.png" class="w-full h-full margin-top-4"/>
+        
           </section>
 
-          <section data-autoslide="25000">
+          <section >
             <div class="inline-block">
               <h2 class="text-white bg-green-700 opacity-085 rounded padding-x-3 padding-y-1">¡Huayra ha vuelto!</h2>
             </div>
@@ -33,14 +35,16 @@
               <span class="bold">Huayra 5</span> está desarrollado por el Estado Nacional, con una construcción federal y colaborativa.<br /></br />
               Todo el código fuente está publicado y es software libre. <span class="bold">¡Huayra es de todos y todas!</span>
             </p>
+             
           </section>
 
           <section>
-            <section data-autoslide="5000">
+            <section >
               <h2>Acompañanos a mostrarte las novedades de Huayra 5</h2>
-            </section>
+            
+               </section>
 
-            <section class="flex-column" data-autoslide="20000">
+            <section class="flex-column" >
               <div class="flex-row items-end justify-space-around" style="margin-bottom: -20px; z-index: 5">
                 <div style="margin-bottom: -15px">
                   <img src="assets/icons/jm/rea.svg" class="block app-icon bg-turquoise-500" />
@@ -237,8 +241,8 @@
 
     <footer id="footer" class="flex-row justify-space-between items-center bg-color-white z-index-100 text-shadow-none">
       <div>
-        <!--<input type="checkbox" name="check" id='check' value="">
-        <label for='check'>Volver a mostrar al iniciar.</label>-->
+        <input type="checkbox" name="check" id='check' value="">
+        <label for='check'>Volver a mostrar al iniciar.</label>
       </div>
 
       <div class="flex-row items-center">

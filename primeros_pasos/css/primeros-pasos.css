@@ -1,3 +1,28 @@
+@font-face {
+    font-family: 'Amatic';
+    src: url('../fonts/amatic-bold_[allfont.es].ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Chivo';
+    src: url('../fonts/Chivo-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'asapregular';
+    src: url('../fonts/asap-variablefont_wght-webfont.woff2') format('woff2'),
+         url('../fonts/asap-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 html, body {
   height: 100vh;
   font-family: 'Chivo';
@@ -35,12 +60,13 @@ button + button {
 .reveal h2,
 .reveal h3,
 .reveal h4 {
-  font-family: 'Amatic', Helvetica, sans-serif;
+  font-family: 'Amatic';
   font-weight: 600;
 }
 
 .reveal p {
   line-height: 1.8rem;
+  font-family: 'asapregular';
 }
 
 .reveal h1 {

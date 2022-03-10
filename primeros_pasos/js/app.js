@@ -1,19 +1,19 @@
-var path = require('path');
-var fs = require('fs');
-var replaceStream = require('replacestream');
-var exec = require('child_process').exec;
-var nw = require('nw.gui');
+//var path = require('path');
+//var fs = require('fs');
+//var replaceStream = require('replacestream');
+//var exec = require('child_process').exec;
+//var nw = require('nw.gui');
 
-var isDev = process.env.IS_DEV;
+var isDev = 1; //process.env.IS_DEV;
 
 /* Hack para setear WM_CLASS */
-process.mainModule.exports.init(require('nwjs-hack').set_wmclass.bind(null, "huayra-bullets", true));
+//process.mainModule.exports.init(require('nwjs-hack').set_wmclass.bind(null, "huayra-bullets", true));
 
 const config = generateConfig();
 
-if (isDev) {
-  nw.Window.get().showDevTools();
-}
+//if (isDev) {
+//  nw.Window.get().showDevTools();
+//}
 
 Reveal.initialize(config);
 
