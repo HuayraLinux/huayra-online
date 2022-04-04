@@ -163,6 +163,15 @@ color: #333;
     font-family: asapregular;
     color: white;
     font-size: 1.2em;
+    left: -30px;
+	width: 120px;
+	text-align: center;
+}
+
+.icono_pagina {
+	width: 64px;
+	height: 64px;
+	padding:20px;
 }
 
 #home {
@@ -201,9 +210,9 @@ color: #333;
 
 }
 
-li.pagina  {
-	padding: 20px;
-	display: inherit;
+td.pagina  {
+	padding: 10px;
+	display: table-cell;
 	font-family: asapregular;
 }
 
