@@ -10,6 +10,7 @@ const home=document.querySelector('#home');
 const groomingText=document.querySelector('#grooming_page');
 const ppasosText=document.querySelector('#primeros_pasos');
 const IconosPanelText=document.querySelector('#panel_iconos_page');
+const homeText=document.querySelector('#home_page');
 
 function showTime(){
 	const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
@@ -173,14 +174,14 @@ grooming.addEventListener('click', () => {
 home.addEventListener('click', () => {
 	const homeBox = new WinBox(
 	{
-		title:"Primeros Pasos",
+		title:"Carpeta Personal",
 		background: '#bbb',
 		width:'800px',
 		height:'600px',
-		url: 'primeros_pasos/ppasos.html',
+		//url: 'primeros_pasos/ppasos.html',
 		top:35,
-		bottom:-370//,
-		//mount:groomingText,
+		bottom:-370,//,
+		mount:homeText,
 	})
 })
 
@@ -199,7 +200,7 @@ primeros_pasos.addEventListener('click', () => {
 })
 
 panel.addEventListener('click', () => {
-	const homeBox = new WinBox(
+	const panelBox = new WinBox(
 	{
 		title:"Panel de Iconos",
 		background: '#bbb',
