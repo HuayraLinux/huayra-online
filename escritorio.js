@@ -5,6 +5,8 @@ const geogebra=document.querySelector('#geogebra');
 const geocalc=document.querySelector('#geocalc');
 const simulaciones=document.querySelector('#simulaciones');
 const grooming=document.querySelector('#grooming');
+const pilas=document.querySelector('#pilas');
+
 const panel=document.querySelector('#panel_iconos');
 const home=document.querySelector('#home');
 const groomingText=document.querySelector('#grooming_page');
@@ -157,6 +159,27 @@ simulaciones.addEventListener('click', () => {
 		left:0})
 	})
 
+pilas.addEventListener('click', () => {
+	const arduinoBox = new WinBox(
+	 {
+		title:"Pilas Bloques",
+		url: 'pilas_bloques/index.html',
+		root: document.getElementById('pantalla'),
+		width:'400px',
+		height:'400px',
+		index:0,
+		top:0,
+		right:0,
+		bottom:0,
+		left:0,
+		onfocus: function(){
+			this.setBackground('#dedede')
+			},
+		onblur: function(){
+			this.setBackground('#c6c6c6')
+			}
+		})
+	})
 
 grooming.addEventListener('click', () => {
 	const groomingBox = new WinBox(

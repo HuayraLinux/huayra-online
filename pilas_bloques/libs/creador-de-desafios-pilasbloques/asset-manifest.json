@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.161c67ac.chunk.css",
+    "main.js": "/static/js/main.10a53963.chunk.js",
+    "main.js.map": "/static/js/main.10a53963.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.8356897d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.8356897d.js.map",
+    "static/js/2.705c64a7.chunk.js": "/static/js/2.705c64a7.chunk.js",
+    "static/js/2.705c64a7.chunk.js.map": "/static/js/2.705c64a7.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.7f92b5148b8a86677685ddc6dff0ca8c.js": "/precache-manifest.7f92b5148b8a86677685ddc6dff0ca8c.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.161c67ac.chunk.css.map": "/static/css/main.161c67ac.chunk.css.map",
+    "static/js/2.705c64a7.chunk.js.LICENSE.txt": "/static/js/2.705c64a7.chunk.js.LICENSE.txt",
+    "static/media/Duba.png": "/static/media/Duba.4964803d.png",
+    "static/media/Lita.png": "/static/media/Lita.a5698456.png",
+    "static/media/Tito.png": "/static/media/Tito.2fe66e11.png",
+    "static/media/actor.ensaladera.png": "/static/media/actor.ensaladera.3320ebb9.png",
+    "static/media/actor.lechuga.png": "/static/media/actor.lechuga.0d8d6e19.png",
+    "static/media/actor.tomate.png": "/static/media/actor.tomate.652b238d.png",
+    "static/media/churrasco.png": "/static/media/churrasco.0f9822af.png",
+    "static/media/eraser.png": "/static/media/eraser.639a9358.png",
+    "static/media/fondo.duba.png": "/static/media/fondo.duba.bdf49db9.png",
+    "static/media/fondo.lita.png": "/static/media/fondo.lita.f3b5ce7f.png",
+    "static/media/icono.LamparitaApagada.png": "/static/media/icono.LamparitaApagada.38f36286.png",
+    "static/media/obstaculo.lita1.png": "/static/media/obstaculo.lita1.f029187e.png",
+    "static/media/red.cross.png": "/static/media/red.cross.af2dfd72.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8356897d.js",
+    "static/js/2.705c64a7.chunk.js",
+    "static/css/main.161c67ac.chunk.css",
+    "static/js/main.10a53963.chunk.js"
+  ]
+}
