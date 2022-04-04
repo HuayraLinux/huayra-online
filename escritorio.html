@@ -37,8 +37,8 @@
 	  console.log(sizes());
 	}
 	</script>
-
 </head>
+
 <body style="height:800px" onLoad="SetPantalla()" >  <!-- ES IMPORTANTE SETEAR UNA ALTURA AL MENOS, PARA QUE WINBOX PUEDA CREAR LA VENTANA 
 	NO FUNCIONA SI SE PONE height=100%. LA VENTANA no respeta limites del div PANTALLA. ESTA MAL ESTO	-->
 
@@ -46,9 +46,11 @@
 <div  id="pantalla" >
 
 <div class="icono" id="home">
+	<div class="titulo_icono">Carpeta Personal</div>
 </div>
 
 <div class="icono" id="grooming">
+	<div class="titulo_icono">Hablemos de Grooming</div>
 </div>
 
 	<div class="hidden">
@@ -56,6 +58,17 @@
 		<div id="grooming_page">
 		</div>
 		<div id="home">
+		</div>
+		<div id="panel_iconos_page">
+			<ul class="pagina">
+				<li class="pagina"><b>Reloj y calendario</b>: funciona como menú, desplegando un calendario, y su respectivo botón de edición.</li>
+				<li class="pagina"><b>Bluetooth</b>: posibilita la transmisión de voz y datos entre diferentes dispositivos. Con su característica 'B' geométrica, para administrar las conexiones inalámbricas de corto alcance a través de este estándar de conectividad.</li>
+				<li class="pagina"><b>Audio</b>: para desplegar el control general de volumen de la computadora. </li>
+				<li class="pagina"><b>Red(es)</b>: para administrar las conexiones de wi-fi (si existiera una conexión de red cable, con puerto RJ45, también aparecería en este menú).</li>
+				<li class="pagina"><b>Centro de Control</b>: un atajo específico por dónde tenemos acceso a todas las configuraciones de nuestro sistema: pantalla, impresoras, mouse, menúes, apariencia, etc.</li>
+				<li class="pagina"><b>Batería</b>: indica el nivel de batería de nuestro equipo. </li>
+				<li class="pagina"><b>Apagado / encendido</b>: despliega los controles para apagar, reiniciar, suspender o hibernar la computadora.</li>
+			</ul>
 		</div>
 	
 	</div>
@@ -92,6 +105,9 @@
 	</div>
    </li>
 </ul>
+<div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+
+<div id="panel_iconos"><img src="img/panel.png"></div>
 </div>
 
 

@@ -1,13 +1,51 @@
-const arduino = document.querySelector('#arduino')
-const gobstones = document.querySelector('#gobstones')
-const geometria=document.querySelector('#geometria')
-const geogebra=document.querySelector('#geogebra')
-const geocalc=document.querySelector('#geocalc')
-const simulaciones=document.querySelector('#simulaciones')
-const grooming=document.querySelector('#grooming')
-const home=document.querySelector('#home')
-const groomingText=document.querySelector('#grooming_page')
-const ppasosText=document.querySelector('#primeros_pasos')
+const arduino = document.querySelector('#arduino');
+const gobstones = document.querySelector('#gobstones');
+const geometria=document.querySelector('#geometria');
+const geogebra=document.querySelector('#geogebra');
+const geocalc=document.querySelector('#geocalc');
+const simulaciones=document.querySelector('#simulaciones');
+const grooming=document.querySelector('#grooming');
+const panel=document.querySelector('#panel_iconos');
+const home=document.querySelector('#home');
+const groomingText=document.querySelector('#grooming_page');
+const ppasosText=document.querySelector('#primeros_pasos');
+const IconosPanelText=document.querySelector('#panel_iconos_page');
+
+function showTime(){
+	const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+	const dias = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+	
+    var date = new Date();
+	var dia = dias[date.getDay()];
+	var fecha = date.getDate();
+	var mes = meses[date.getMonth()];
+    var h = date.getHours(); // 0 - 23
+    var m = date.getMinutes(); // 0 - 59
+    var s = date.getSeconds(); // 0 - 59
+    var session = "AM";
+    
+    if(h == 0){
+        h = 12;
+    }
+    
+    if(h > 12){
+        h = h - 12;
+        session = "PM";
+    }
+    
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+    
+    var time = dia + " " + fecha + " de " + mes + ", " + h + ":" + m + ":" + s + " " + session;
+    document.getElementById("MyClockDisplay").innerText = time;
+    document.getElementById("MyClockDisplay").textContent = time;
+    
+    setTimeout(showTime, 1000);
+    
+}
+
+showTime();
 
 arduino.addEventListener('click', () => {
 	const arduinoBox = new WinBox(
@@ -137,10 +175,11 @@ home.addEventListener('click', () => {
 	{
 		title:"Primeros Pasos",
 		background: '#bbb',
-		width:'558px',
-		height:'345px',
+		width:'800px',
+		height:'600px',
 		url: 'primeros_pasos/ppasos.html',
-		top:35//,
+		top:35,
+		bottom:-370//,
 		//mount:groomingText,
 	})
 })
@@ -150,10 +189,24 @@ primeros_pasos.addEventListener('click', () => {
 	{
 		title:"Primeros Pasos",
 		background: '#bbb',
-		width:'558px',
-		height:'345px',
+		width:'800px',
+		height:'600px',
 		url: 'primeros_pasos/ppasos.html',
-		top:35//,
+		top:35,
+		bottom:-370//,
 		//mount:groomingText,
+	})
+})
+
+panel.addEventListener('click', () => {
+	const homeBox = new WinBox(
+	{
+		title:"Panel de Iconos",
+		background: '#bbb',
+		width:'800px',
+		height:'600px',
+		top:35,
+		bottom:-370,//,
+		mount:IconosPanelText,
 	})
 })
