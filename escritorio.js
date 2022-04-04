@@ -6,6 +6,8 @@ const geocalc=document.querySelector('#geocalc');
 const simulaciones=document.querySelector('#simulaciones');
 const grooming=document.querySelector('#grooming');
 const pilas=document.querySelector('#pilas');
+const huayra_online=document.querySelector('#huayra_online');
+const acerca=document.querySelector('#acerca');
 
 const panel=document.querySelector('#panel_iconos');
 const home=document.querySelector('#home');
@@ -13,6 +15,8 @@ const groomingText=document.querySelector('#grooming_page');
 const ppasosText=document.querySelector('#primeros_pasos');
 const IconosPanelText=document.querySelector('#panel_iconos_page');
 const homeText=document.querySelector('#home_page');
+const huayraOnlineText=document.querySelector('#huayra_online_page');
+const AcercaText=document.querySelector('#acerca_page');
 
 function showTime(){
 	const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
@@ -232,5 +236,31 @@ panel.addEventListener('click', () => {
 		top:35,
 		bottom:-370,//,
 		mount:IconosPanelText,
+	})
+})
+
+huayra_online.addEventListener('click', () => {
+	const panelBox = new WinBox(
+	{
+		title:"Acerca de Huayra GNU/Linux Online",
+		background: '#bbb',
+		width:'800px',
+		height:'600px',
+		top:35,
+		bottom:-370,//,
+		mount:huayraOnlineText
+	})
+})
+
+acerca.addEventListener('click', () => {
+	const panelBox = new WinBox(
+	{
+		title:"Acerca de Huayra GNU/Linux",
+		background: '#bbb',
+		width:'800px',
+		height:'600px',
+		top:35,
+		bottom:-370,//,
+		mount:AcercaText
 	})
 })
